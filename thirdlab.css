@@ -1,0 +1,344 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   background: #0f0f1e;
+   padding: 0;
+   min-height: 100vh;
+}
+
+.container {
+   max-width: 100%;
+   margin: 0;
+   background: linear-gradient(to bottom, #1a1a2e 0%, #16213e 100%);
+}
+
+.header {
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   color: white;
+   padding: 60px 30px;
+   text-align: center;
+   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.header h1 {
+   font-size: 36px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 50px 30px;
+   position: relative;
+}
+
+.section::before {
+   content: "";
+   position: absolute;
+   left: 30px;
+   top: 0;
+   width: 4px;
+   height: 100%;
+   background: linear-gradient(to bottom, #667eea, #764ba2);
+   border-radius: 2px;
+}
+
+.section h2 {
+   color: #667eea;
+   font-size: 26px;
+   margin-bottom: 30px;
+   margin-left: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+}
+
+.form-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 25px;
+   margin-bottom: 30px;
+   margin-left: 20px;
+}
+
+.form-grid div {
+   display: flex;
+   flex-direction: column;
+}
+
+label {
+   color: #a0a0b0;
+   font-size: 13px;
+   font-weight: 600;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+   padding: 14px 16px;
+   border: 2px solid #2a2a3e;
+   border-radius: 8px;
+   font-size: 15px;
+   transition: all 0.3s ease;
+   font-family: inherit;
+   background-color: #1e1e2e;
+   color: #e0e0e0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+   outline: none;
+   border-color: #667eea;
+   background-color: #252536;
+   box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+   transform: translateY(-2px);
+}
+
+select {
+   cursor: pointer;
+}
+
+select option {
+   background-color: #1e1e2e;
+   color: #e0e0e0;
+}
+
+textarea {
+   min-height: 120px;
+   resize: vertical;
+   width: 100%;
+}
+
+.radio-group {
+   margin: 30px 0 30px 20px;
+   padding: 25px;
+   background: rgba(102, 126, 234, 0.05);
+   border-radius: 10px;
+   border-left: 4px solid #667eea;
+}
+
+.radio-group label {
+   display: inline-flex;
+   align-items: center;
+   margin-right: 30px;
+   margin-bottom: 15px;
+   cursor: pointer;
+   color: #b0b0c0;
+   text-transform: none;
+   font-size: 15px;
+}
+
+.radio-group input[type="radio"] {
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.radio-group input[type="text"] {
+   margin-top: 15px;
+   max-width: 250px;
+   display: block;
+}
+
+.checkbox-group {
+   margin: 20px 0 20px 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 15px;
+}
+
+.checkbox-group label {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   color: #b0b0c0;
+   text-transform: none;
+   font-size: 14px;
+   padding: 12px;
+   border-radius: 6px;
+   transition: background 0.3s ease;
+}
+
+.checkbox-group label:hover {
+   background: rgba(102, 126, 234, 0.05);
+}
+
+input[type="checkbox"] {
+   margin-right: 12px;
+   cursor: pointer;
+   width: 18px;
+   height: 18px;
+   accent-color: #667eea;
+}
+
+input[type="radio"] {
+   width: 18px;
+   height: 18px;
+   accent-color: #667eea;
+}
+
+.buttons {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   padding: 50px 30px;
+   background: #1a1a2e;
+   border-top: 1px solid #2a2a3e;
+}
+
+input[type="reset"],
+input[type="submit"] {
+   padding: 16px 50px;
+   border: none;
+   border-radius: 50px;
+   font-size: 15px;
+   font-weight: 700;
+   cursor: pointer;
+   transition: all 0.4s ease;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+input[type="reset"] {
+   background: transparent;
+   color: #e0e0e0;
+   border: 2px solid #4a4a5e;
+}
+
+input[type="reset"]:hover {
+   background-color: #3a3a4e;
+   transform: translateY(-3px);
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"] {
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   color: white;
+   position: relative;
+   overflow: hidden;
+}
+
+input[type="submit"]::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+   transition: left 0.5s ease;
+}
+
+input[type="submit"]:hover::before {
+   left: 100%;
+}
+
+input[type="submit"]:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+}
+
+.note {
+   text-align: center;
+   padding: 25px;
+   color: #4ade80;
+   font-weight: 600;
+   font-size: 15px;
+   background: linear-gradient(to right, transparent, rgba(74, 222, 128, 0.1), transparent);
+   margin: 0;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+/* Custom placeholder styling */
+input::placeholder,
+textarea::placeholder {
+   color: #5a5a6e;
+   font-style: italic;
+}
+
+/* Additional styling for specific sections */
+.section > label {
+   display: block;
+   margin: 30px 0 10px 20px;
+}
+
+.section > input[type="text"],
+.section > textarea {
+   margin-left: 20px;
+   max-width: calc(100% - 40px);
+}
+
+.section > .checkbox-group {
+   margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+   .form-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 768px) {
+   .header {
+      padding: 40px 20px;
+   }
+
+   .header h1 {
+      font-size: 26px;
+   }
+
+   .section {
+      padding: 30px 20px;
+   }
+
+   .section::before {
+      left: 20px;
+   }
+
+   .form-grid {
+      grid-template-columns: 1fr;
+      margin-left: 10px;
+   }
+
+   .radio-group,
+   .checkbox-group,
+   .section > label,
+   .section > input[type="text"],
+   .section > textarea {
+      margin-left: 10px;
+   }
+
+   .section h2 {
+      margin-left: 10px;
+      font-size: 22px;
+   }
+
+   .buttons {
+      flex-direction: column;
+      padding: 30px 20px;
+   }
+
+   input[type="reset"],
+   input[type="submit"] {
+      width: 100%;
+   }
+
+   .checkbox-group {
+      grid-template-columns: 1fr;
+   }
+}

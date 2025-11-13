@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="thirdlab.css" />
+      <title>Registration Page</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="header">
+            <h1>Registration / Donation Page</h1>
+         </div>
+
+         <!-- Donor Information -->
+         <div class="section">
+            <h2>Donor Information</h2>
+            <div class="form-grid">
+               <div><label>First Name*</label><input type="text" required /></div>
+               <div><label>Last Name*</label><input type="text" required /></div>
+               <div><label>Company</label><input type="text" /></div>
+               <div><label>Address 1*</label><input type="text" required /></div>
+               <div><label>Address 2</label><input type="text" /></div>
+               <div><label>City*</label><input type="text" required /></div>
+               <div>
+                  <label>State*</label>
+                  <select required>
+                     <option value="">Select a State</option>
+                     <option>California</option>
+                     <option>Texas</option>
+                     <option>New York</option>
+                  </select>
+               </div>
+               <div><label>Zip Code*</label><input type="text" required /></div>
+               <div>
+                  <label>Country*</label>
+                  <select required>
+                     <option value="">Select a Country</option>
+                     <option>USA</option>
+                     <option>India</option>
+                     <option>UK</option>
+                  </select>
+               </div>
+               <div><label>Phone</label><input type="text" /></div>
+               <div><label>Fax</label><input type="text" /></div>
+               <div><label>Email*</label><input type="email" required /></div>
+            </div>
+
+            <div class="radio-group">
+               <label><b>Donation Amount*</b></label
+               ><br />
+               <label><input type="radio" name="amount" /> $50</label>
+               <label><input type="radio" name="amount" /> $100</label>
+               <label><input type="radio" name="amount" /> $250</label>
+               <label><input type="radio" name="amount" /> Other</label>
+               <input type="text" placeholder="Enter Amount" />
+            </div>
+
+            <label><input type="checkbox" /> I am interested in giving on a regular basis.</label>
+         </div>
+
+         <!-- Honorarium Section -->
+         <div class="section">
+            <h2>Honorarium and Memorial Donation Information</h2>
+            <div class="radio-group">
+               <label><input type="radio" name="donation_type" /> To Honor</label>
+               <label><input type="radio" name="donation_type" /> In Memory of</label>
+            </div>
+            <div class="form-grid">
+               <div><label>Name</label><input type="text" /></div>
+               <div><label>Acknowledge Donation to</label><input type="text" /></div>
+               <div><label>Address</label><input type="text" /></div>
+               <div><label>City</label><input type="text" /></div>
+               <div>
+                  <label>State</label>
+                  <select>
+                     <option>Select a State</option>
+                     <option>California</option>
+                     <option>Texas</option>
+                  </select>
+               </div>
+               <div><label>Zip</label><input type="text" /></div>
+            </div>
+         </div>
+
+         <!-- Additional Information -->
+         <div class="section">
+            <h2>Additional Information</h2>
+            <label>Name</label>
+            <input type="text" />
+
+            <div class="checkbox-group">
+               <label><input type="checkbox" /> I would like my gift to remain anonymous.</label>
+               <label><input type="checkbox" /> My employer offers a matching gift program.</label>
+               <label
+                  ><input type="checkbox" /> Please save the cost of mailing a thank-you
+                  letter.</label
+               >
+            </div>
+
+            <label>Comments</label>
+            <textarea placeholder="Enter your comments or feedback..."></textarea>
+
+            <label>How may we contact you?</label>
+            <div class="checkbox-group">
+               <label><input type="checkbox" /> E-mail</label>
+               <label><input type="checkbox" /> Postal Mail</label>
+               <label><input type="checkbox" /> Telephone</label>
+               <label><input type="checkbox" /> Fax</label>
+            </div>
+         </div>
+
+         <!-- Buttons -->
+         <div class="buttons">
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Continue" />
+         </div>
+      </div>
+   </body>
+</html>
