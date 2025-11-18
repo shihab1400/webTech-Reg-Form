@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>University Admission Form</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="header">
+            <h1>University Admission Form</h1>
+            <p>Academic Year 2025-2026</p>
+         </div>
+
+         <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Personal Information Section -->
+            <fieldset>
+               <legend>Personal Information</legend>
+
+               <div class="form-group">
+                  <label for="firstName">First Name <span class="required">*</span></label>
+                  <input type="text" id="firstName" name="firstName" maxlength="50" required />
+               </div>
+
+               <div class="form-group">
+                  <label for="lastName">Last Name <span class="required">*</span></label>
+                  <input type="text" id="lastName" name="lastName" maxlength="50" required />
+               </div>
+
+               <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" required />
+                  <small>We'll use this email for all admission communications</small>
+               </div>
+
+               <div class="form-group">
+                  <label for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="phone" maxlength="15" required />
+               </div>
+
+               <div class="form-group">
+                  <label for="dob">Date of Birth <span class="required">*</span></label>
+                  <input type="date" id="dob" name="dob" required />
+               </div>
+
+               <div class="form-group">
+                  <label>Gender <span class="required">*</span></label>
+                  <div class="radio-group">
+                     <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male" required />
+                        <label for="male">Male</label>
+                     </div>
+                     <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female" required />
+                        <label for="female">Female</label>
+                     </div>
+                     <div class="radio-option">
+                        <input type="radio" id="other" name="gender" value="other" required />
+                        <label for="other">Other</label>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="form-group">
+                  <label for="address">Home Address <span class="required">*</span></label>
+                  <textarea
+                     id="address"
+                     name="address"
+                     rows="3"
+                     maxlength="200"
+                     required
+                  ></textarea>
+               </div>
+
+               <div class="form-group">
+                  <label for="nationality">Nationality <span class="required">*</span></label>
+                  <input type="text" id="nationality" name="nationality" maxlength="50" required />
+               </div>
+            </fieldset>
+
+            <!-- Academic Information Section -->
+            <fieldset>
+               <legend>Academic Information</legend>
+
+               <div class="form-group">
+                  <label for="previousSchool"
+                     >Previous School/College Name <span class="required">*</span></label
+                  >
+                  <input
+                     type="text"
+                     id="previousSchool"
+                     name="previousSchool"
+                     maxlength="100"
+                     required
+                  />
+               </div>
+
+               <div class="form-group">
+                  <label for="graduationYear"
+                     >Year of Graduation <span class="required">*</span></label
+                  >
+                  <input
+                     type="number"
+                     id="graduationYear"
+                     name="graduationYear"
+                     min="1980"
+                     max="2025"
+                     required
+                  />
+               </div>
+
+               <div class="form-group">
+                  <label for="gpa">GPA / Percentage <span class="required">*</span></label>
+                  <input type="text" id="gpa" name="gpa" maxlength="10" required />
+                  <small>Example: 3.8 GPA or 85%</small>
+               </div>
+
+               <div class="form-group">
+                  <label for="department"
+                     >Preferred Department <span class="required">*</span></label
+                  >
+                  <select id="department" name="department" required>
+                     <option value="">-- Select Department --</option>
+                     <option value="computer-science">Computer Science & Engineering</option>
+                     <option value="electrical">Electrical Engineering</option>
+                     <option value="mechanical">Mechanical Engineering</option>
+                     <option value="civil">Civil Engineering</option>
+                     <option value="business">Business Administration</option>
+                     <option value="economics">Economics</option>
+                     <option value="psychology">Psychology</option>
+                     <option value="biology">Biology</option>
+                     <option value="chemistry">Chemistry</option>
+                     <option value="physics">Physics</option>
+                     <option value="mathematics">Mathematics</option>
+                     <option value="literature">English Literature</option>
+                  </select>
+               </div>
+
+               <div class="form-group">
+                  <label for="program">Program Type <span class="required">*</span></label>
+                  <select id="program" name="program" required>
+                     <option value="">-- Select Program --</option>
+                     <option value="undergraduate">Undergraduate (Bachelor's)</option>
+                     <option value="graduate">Graduate (Master's)</option>
+                     <option value="phd">Doctoral (Ph.D.)</option>
+                  </select>
+               </div>
+
+               <div class="form-group">
+                  <label>Areas of Interest (Select all that apply)</label>
+                  <div class="checkbox-group">
+                     <div class="checkbox-option">
+                        <input type="checkbox" id="research" name="interests" value="research" />
+                        <label for="research">Research</label>
+                     </div>
+                     <div class="checkbox-option">
+                        <input type="checkbox" id="sports" name="interests" value="sports" />
+                        <label for="sports">Sports</label>
+                     </div>
+                     <div class="checkbox-option">
+                        <input type="checkbox" id="arts" name="interests" value="arts" />
+                        <label for="arts">Arts & Culture</label>
+                     </div>
+                     <div class="checkbox-option">
+                        <input type="checkbox" id="volunteer" name="interests" value="volunteer" />
+                        <label for="volunteer">Volunteering</label>
+                     </div>
+                     <div class="checkbox-option">
+                        <input
+                           type="checkbox"
+                           id="technology"
+                           name="interests"
+                           value="technology"
+                        />
+                        <label for="technology">Technology</label>
+                     </div>
+                  </div>
+               </div>
+            </fieldset>
+
+            <!-- Document Upload Section -->
+            <fieldset>
+               <legend>Document Uploads</legend>
+
+               <div class="form-group">
+                  <label for="transcript"
+                     >Academic Transcript <span class="required">*</span></label
+                  >
+                  <input
+                     type="file"
+                     id="transcript"
+                     name="transcript"
+                     accept=".pdf,.doc,.docx"
+                     required
+                  />
+                  <small>Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+               </div>
+
+               <div class="form-group">
+                  <label for="idProof"
+                     >ID Proof (Passport/National ID) <span class="required">*</span></label
+                  >
+                  <input
+                     type="file"
+                     id="idProof"
+                     name="idProof"
+                     accept=".pdf,.jpg,.jpeg,.png"
+                     required
+                  />
+                  <small>Accepted formats: PDF, JPG, PNG (Max 5MB)</small>
+               </div>
+
+               <div class="form-group">
+                  <label for="photo">Recent Photograph <span class="required">*</span></label>
+                  <input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png" required />
+                  <small>Accepted formats: JPG, PNG (Max 2MB)</small>
+               </div>
+
+               <div class="form-group">
+                  <label for="recommendation">Letter of Recommendation (Optional)</label>
+                  <input
+                     type="file"
+                     id="recommendation"
+                     name="recommendation"
+                     accept=".pdf,.doc,.docx"
+                  />
+                  <small>Accepted formats: PDF, DOC, DOCX (Max 5MB)</small>
+               </div>
+            </fieldset>
+
+            <!-- Additional Information Section -->
+            <fieldset>
+               <legend>Additional Information</legend>
+
+               <div class="form-group">
+                  <label for="statement">Personal Statement</label>
+                  <textarea
+                     id="statement"
+                     name="statement"
+                     rows="5"
+                     maxlength="500"
+                     placeholder="Tell us why you want to join our university (Optional)"
+                  ></textarea>
+                  <small>Maximum 500 characters</small>
+               </div>
+
+               <div class="form-group">
+                  <label>How did you hear about us?</label>
+                  <div class="radio-group">
+                     <div class="radio-option">
+                        <input type="radio" id="website" name="source" value="website" />
+                        <label for="website">Website</label>
+                     </div>
+                     <div class="radio-option">
+                        <input type="radio" id="social" name="source" value="social" />
+                        <label for="social">Social Media</label>
+                     </div>
+                     <div class="radio-option">
+                        <input type="radio" id="friend" name="source" value="friend" />
+                        <label for="friend">Friend/Family</label>
+                     </div>
+                     <div class="radio-option">
+                        <input type="radio" id="fair" name="source" value="fair" />
+                        <label for="fair">Education Fair</label>
+                     </div>
+                  </div>
+               </div>
+            </fieldset>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="button-group">
+               <button type="submit">Submit Application</button>
+               <button type="reset">Reset Form</button>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

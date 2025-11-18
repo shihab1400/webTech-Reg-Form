@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Z-Index</title>
+      <style>
+         div {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: grid;
+            place-items: center;
+         }
+
+         div:nth-child(1) {
+            background-color: red;
+            z-index: 3;
+         }
+         div:nth-child(2) {
+            background-color: green;
+            z-index: 4;
+            top: 50px;
+            left: 50px;
+         }
+         div:nth-child(3) {
+            background-color: blue;
+            z-index: 1;
+            top: 100px;
+            left: 100px;
+         }
+
+         p {
+            display: block;
+            color: #fff;
+            font-size: 40px;
+         }
+      </style>
+   </head>
+   <body>
+      <div><p>Box 1</p></div>
+      <div><p>Box 2</p></div>
+      <div><p>Box 3</p></div>
+   </body>
+</html>
