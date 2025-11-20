@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>About — Personal</title>
+      <style>
+         :root {
+            --pad: 28px;
+            --radius: 10px;
+            --maxw: 900px;
+         }
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 40px 12px;
+            display: flex;
+            justify-content: center;
+         }
+         .container {
+            width: 100%;
+            max-width: var(--maxw);
+         }
+         .section {
+            color: #111;
+            border-radius: var(--radius);
+            padding: var(--pad);
+            margin: 18px 0;
+            box-shadow: 0 6px 18px rgba(15, 20, 30, 0.06);
+         }
+         #about {
+            background: linear-gradient(135deg, #ffd6c2 0%, #ffb3a7 100%);
+         }
+         #education {
+            background: linear-gradient(135deg, #c8f7e5 0%, #8fe9d6 100%);
+         }
+         #hobbies {
+            background: linear-gradient(135deg, #e8d6ff 0%, #d6b3ff 100%);
+         }
+         .section h2 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 1.5rem;
+         }
+         .section p {
+            margin: 8px 0;
+         }
+         hr.sep {
+            border: 0;
+            height: 6px;
+            width: 70%;
+            border-radius: 6px;
+            margin: 20px auto;
+            background: #444;
+            opacity: 0.18;
+         }
+
+         #about + hr.sep {
+            background: #ff7b59;
+            opacity: 0.95;
+            height: 8px;
+            width: 60%;
+         }
+         #education + hr.sep {
+            background: #2eccb6;
+            opacity: 0.95;
+            height: 8px;
+            width: 55%;
+         }
+         #hobbies + hr.sep {
+            background: #a86cff;
+            opacity: 0.95;
+            height: 8px;
+            width: 50%;
+         }
+         @media (max-width: 600px) {
+            .section {
+               padding: 18px;
+            }
+            .section h2 {
+               font-size: 1.25rem;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello — I'm a web enthusiast who loves building colorful, accessible pages.</p>
+            <p style="color: blue">
+               I enjoy learning new front-end techniques and experimenting with design.
+            </p>
+            <p>I value clean semantics, good spacing, and readable contrast.</p>
+         </div>
+
+         <hr class="sep" />
+
+         <div id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>University:</strong> Bachelor of Science in Computer Science</p>
+            <p>
+               <strong>Focus:</strong> Web development, human-computer interaction, and algorithms.
+            </p>
+            <p>Relevant courses include Web Tech, UI Design, and Database Systems.</p>
+         </div>
+
+         <hr class="sep" />
+
+         <div id="hobbies" class="section">
+            <h2>Hobbies</h2>
+            <p>I enjoy:</p>
+            <ul>
+               <li>Designing small UI experiments and micro-interactions</li>
+               <li>Photography, especially nature and street scenes</li>
+               <li>Playing guitar and composing short melodies</li>
+            </ul>
+            <p>On weekends I like to combine photography and short web projects.</p>
+         </div>
+      </div>
+   </body>
+</html>

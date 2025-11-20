@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Your Name" />
+      <meta
+         name="description"
+         content="TasteHub - Explore our mouth-watering restaurant menu with starters, main course, desserts, and drinks."
+      />
+      <title>TasteHub Restaurant Menu</title>
+      <style>
+         :root {
+            --accent: #c94c4c;
+            --muted: #666;
+            --bg: #fafafa;
+            --card: #fff;
+         }
+         html {
+            scroll-behavior: smooth;
+         }
+         body {
+            font-family: Segoe UI, Roboto, Arial, sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: #222;
+         }
+         header {
+            background: linear-gradient(90deg, #fff 0%, #f7f7f7 100%);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e5e5e5;
+         }
+         .brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+         }
+         .logo {
+            width: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+         }
+         h1 {
+            margin: 0.2rem 0;
+         }
+         p.tag {
+            margin: 0;
+            color: var(--muted);
+         }
+         nav {
+            margin-top: 0.75rem;
+         }
+         nav a {
+            margin-right: 1rem;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 600;
+         }
+         .container {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+         }
+         main {
+            flex: 1;
+            max-width: 900px;
+         }
+         aside {
+            width: 260px;
+         }
+         section {
+            background: var(--card);
+            padding: 1rem 1.25rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+         }
+         h2 {
+            margin-top: 0;
+            color: #333;
+         }
+         ul.menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+         }
+         li.item {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+         }
+         li.item:last-child {
+            border-bottom: none;
+         }
+         .thumb {
+            width: 96px;
+            height: 64px;
+            object-fit: cover;
+            border-radius: 6px;
+         }
+         .meta {
+            flex: 1;
+         }
+         .name {
+            font-weight: 700;
+            display: inline-block;
+         }
+         .desc {
+            display: block;
+            color: var(--muted);
+            margin: 0.25rem 0;
+         }
+         .price {
+            font-weight: 700;
+            color: var(--accent);
+            margin-left: 8px;
+         }
+         .backtop {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--muted);
+            text-decoration: none;
+         }
+         fieldset {
+            border: 1px solid #e2e2e2;
+            padding: 1rem;
+            border-radius: 8px;
+         }
+         legend {
+            padding: 0 0.5rem;
+            font-weight: 700;
+            color: var(--accent);
+         }
+         footer {
+            padding: 1.25rem 2rem;
+            background: #fff;
+            border-top: 1px solid #eaeaea;
+            margin-top: 2rem;
+         }
+         .footer-grid {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+         }
+         .social a {
+            margin-right: 0.5rem;
+            color: var(--muted);
+            text-decoration: none;
+         }
+         .book {
+            display: inline-block;
+            margin-top: 0.5rem;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+         }
+         @media (max-width: 900px) {
+            .container {
+               flex-direction: column;
+            }
+            aside {
+               width: 100%;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <header id="top">
+         <div class="brand">
+            <img
+               src="img/Gemini_Generated_Image_4lsvna4lsvna4lsv-removebg-preview.png"
+               alt="TasteHub logo"
+               class="logo"
+            />
+            <div>
+               <h1>TasteHub Restaurant</h1>
+               <p class="tag">Deliciousness Delivered Fresh Every Day!</p>
+            </div>
+         </div>
+         <nav aria-label="Main Navigation">
+            <a href="#starters">Starters</a>
+            <a href="#maincourse">Main Course</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#drinks">Drinks</a>
+         </nav>
+      </header>
+
+      <div class="container">
+         <main>
+            <section id="starters">
+               <h2>Starters</h2>
+               <ul class="menu">
+                  <li class="item">
+                     <img src="img/Bruschetta.jpg" alt="Bruschetta" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Bruschetta</span>
+                        <span class="price">$6.50</span>
+                        <span class="desc"
+                           >Toasted ciabatta topped with tomato, basil, and balsamic glaze.</span
+                        >
+                     </div>
+                  </li>
+                  <li class="item">
+                     <img src="img/Calamari.jpg" alt="Crispy Calamari" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Crispy Calamari</span>
+                        <span class="price">$9.99</span>
+                        <span class="desc"
+                           >Lightly battered calamari served with zesty lemon aioli.</span
+                        >
+                     </div>
+                  </li>
+                  <li class="item">
+                     <img src="img/Soup.jpg" alt="Soup of the Day" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Soup of the Day</span>
+                        <span class="price">$5.50</span>
+                        <span class="desc"
+                           >Chef's rotating seasonal soup—ask your server for today's
+                           selection.</span
+                        >
+                     </div>
+                  </li>
+               </ul>
+               <a class="backtop" href="#top">Back to Top</a>
+            </section>
+
+            <hr />
+
+            <section id="maincourse">
+               <h2>Main Course</h2>
+               <ul class="menu">
+                  <li class="item">
+                     <img src="img/Salmon.jpg" alt="Grilled Salmon" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Grilled Salmon</span>
+                        <span class="price">$18.99</span>
+                        <span class="desc"
+                           >Fresh salmon fillet grilled to perfection, served with lemon butter and
+                           seasonal veggies.</span
+                        >
+                     </div>
+                  </li>
+                  <li class="item">
+                     <img src="img/Chicken.jpg" alt="Herb Chicken" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Herbed Chicken</span>
+                        <span class="price">$16.50</span>
+                        <span class="desc"
+                           >Roasted chicken with garlic herb rub, mashed potatoes and roasted
+                           carrots.</span
+                        >
+                     </div>
+                  </li>
+                  <li class="item">
+                     <img src="img/Pasta.jpg" alt="Pasta Primavera" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Pasta Primavera</span>
+                        <span class="price">$14.75</span>
+                        <span class="desc"
+                           >Penne pasta tossed with seasonal vegetables and a light garlic cream
+                           sauce.</span
+                        >
+                     </div>
+                  </li>
+               </ul>
+               <a class="backtop" href="#top">Back to Top</a>
+            </section>
+
+            <hr />
+
+            <section id="desserts">
+               <h2>Desserts</h2>
+               <ul class="menu">
+                  <li class="item">
+                     <img src="img/Cheesecake.jpg" alt="Cheesecake" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Classic Cheesecake</span>
+                        <span class="price">$7.00</span>
+                        <span class="desc"
+                           >Creamy New York-style cheesecake with a buttery graham crust.</span
+                        >
+                     </div>
+                  </li>
+                  <li class="item">
+                     <img src="img/Cake.png" alt="Chocolate Lava Cake" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Chocolate Lava Cake</span>
+                        <span class="price">$8.25</span>
+                        <span class="desc"
+                           >Warm chocolate cake with molten center, served with vanilla ice
+                           cream.</span
+                        >
+                     </div>
+                  </li>
+               </ul>
+               <a class="backtop" href="#top">Back to Top</a>
+            </section>
+
+            <hr />
+
+            <section id="drinks">
+               <h2>Drinks</h2>
+               <ul class="menu">
+                  <li class="item">
+                     <img src="img/Tea.jpg" alt="Iced Tea" class="thumb" />
+                     <div class="meta">
+                        <span class="name">Fresh Iced Tea</span>
+                        <span class="price">$3.50</span>
+                        <span class="desc"
+                           >House-brewed iced tea—ask for lemon or peach infusion.</span
+                        >
+                     </div>
+                  </li>
+                  <li class="item">
+                     <img src="img/Cocktail.jpg" alt="Signature Cocktail" class="thumb" />
+                     <div class="meta">
+                        <span class="name">TasteHub Signature</span>
+                        <span class="price">$9.00</span>
+                        <span class="desc"
+                           >A refreshing mix of citrus, gin, and a hint of rosemary.</span
+                        >
+                     </div>
+                  </li>
+               </ul>
+               <a class="backtop" href="#top">Back to Top</a>
+            </section>
+
+            <hr />
+
+            <section aria-labelledby="chefspecial">
+               <fieldset>
+                  <legend id="chefspecial">Chef's Special</legend>
+                  <ul class="menu">
+                     <li class="item">
+                        <div class="meta">
+                           <span class="name">Seared Scallops</span>
+                           <span class="price">$22.00</span>
+                           <span class="desc"
+                              >Pan-seared scallops with pea purée and crispy pancetta.</span
+                           >
+                        </div>
+                     </li>
+                     <li class="item">
+                        <div class="meta">
+                           <span class="name">Truffle Mushroom Risotto</span>
+                           <span class="price">$19.50</span>
+                           <span class="desc"
+                              >Creamy risotto with mixed mushrooms and a drizzle of truffle
+                              oil.</span
+                           >
+                        </div>
+                     </li>
+                  </ul>
+               </fieldset>
+            </section>
+
+            <p style="margin-top: 1rem">
+               Want to reserve a table? <a class="book" href="#">Book a Table</a>
+            </p>
+         </main>
+
+         <aside>
+            <section
+               style="
+                  background: var(--card);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+               "
+            >
+               <h3>Daily Offers</h3>
+               <p style="color: var(--muted); margin-top: 0.25rem">
+                  - Lunch special: 2-course set $12.99 (Mon–Fri)
+               </p>
+               <p style="color: var(--muted); margin-top: 0.25rem">
+                  - Happy Hour: 4–6pm — 30% off select drinks
+               </p>
+               <p style="color: var(--muted); margin-top: 0.25rem">
+                  - Students: 10% off with valid ID
+               </p>
+            </section>
+            <section
+               style="
+                  margin-top: 1rem;
+                  background: var(--card);
+                  padding: 1rem;
+                  border-radius: 8px;
+                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+               "
+            >
+               <h3>Opening Hours</h3>
+               <p style="color: var(--muted); margin: 0.25rem 0">Mon–Fri: 11:00 AM – 10:00 PM</p>
+               <p style="color: var(--muted); margin: 0.25rem 0">Sat–Sun: 9:00 AM – 11:00 PM</p>
+            </section>
+         </aside>
+      </div>
+
+      <footer>
+         <div class="footer-grid">
+            <div>
+               <strong>Contact</strong>
+               <p style="margin: 0.25rem 0">123 Flavor Street, Foodville</p>
+               <p style="margin: 0.25rem 0">Phone: (555) 123-4567</p>
+            </div>
+            <div>
+               <strong>Hours</strong>
+               <p style="margin: 0.25rem 0">Open Daily — see Aside for details</p>
+            </div>
+            <div class="social">
+               <strong>Follow</strong>
+               <p style="margin: 0.25rem 0">
+                  <a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">Twitter</a>
+               </p>
+            </div>
+         </div>
+         <div
+            style="
+               margin-top: 0.75rem;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               flex-wrap: wrap;
+            "
+         >
+            <small>© 2025 TasteHub Restaurant | All Rights Reserved</small>
+            <div>
+               <a href="#top">Back to Top</a>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
