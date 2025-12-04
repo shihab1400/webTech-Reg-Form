@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Image Slider</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
+
+         .container {
+            border: 2px solid black;
+         }
+
+         .btns {
+            display: flex;
+            width: 30px;
+         }
+
+         button {
+            outline: none;
+            border: 1px solid black;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 10px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <img src="img/Bruschetta.png" alt="" />
+      </div>
+      <div class="btns">
+         <button class="pre"><img src="img/back.png" alt="" width="30px" /></button>
+         <button class="next"><img src="img/next.png" alt="" width="30px" /></button>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>
