@@ -9,11 +9,7 @@
    echo "<br>";
 
    function fact($a) {
-      if($a<=1) {
-         return 1;
-      } else {
-         return $a*fact($a-1);
-      }
+      return $a<=1 ? 1 : $a*fact($a-1);
    }
    echo "Factorial of 5: ".fact(5);
 
@@ -27,11 +23,7 @@
          }
       }
 
-      if($prime) {
-         return "Prime";
-      } else {
-         return "Not Prime";
-      }
+      return $prime ? "Prime" : "Not Prime";
    }
 
    echo "23: ".isPrime(23)."<br>";
