@@ -22,7 +22,6 @@
             $prime = false;
          }
       }
-
       return $prime ? "Prime" : "Not Prime";
    }
 
